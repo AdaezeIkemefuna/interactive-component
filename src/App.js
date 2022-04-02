@@ -2,11 +2,7 @@ import './App.css'
 import Template from './Template';
 import Thankyou from './Thankyou';
 import { useState } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import { Router } from 'react-router-dom';
-import { createBrowserHistory } from 'history';
-
-const newHistory = createBrowserHistory();
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
   const [ rating, setRating ] = useState(0)
@@ -15,7 +11,7 @@ function App() {
         setRating(e.target.value)
     }
   return (
-    <Router history={newHistory}>
+    <Router >
     <div className="App">
       <Switch>
         <Route exact path="/">
