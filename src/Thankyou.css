@@ -1,0 +1,12 @@
+.thank{
+    align-items: center;
+    text-align: center;
+}
+
+.result{
+    background-color: rgba(193, 180, 180, 0.2);
+    color: #fb7413;
+    font-size: 15px;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
